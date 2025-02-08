@@ -11,37 +11,44 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css\style.css" />
-		<script src="js/app.js"></script>
 	</head>
 	<body>
 		<header>
 			<h2>Kalkulator Suhu</h2>
 		</header>
 		<main>
-			<section class="tutorial">
-				<p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F)</p>
-			</section>
-			<!-- Form Konversi -->
-			<section class="form-konversi">
-				<form>
-					<input type="text" />
-					<div class="btn-konversi">
-						<button type="submit">Konversi</button>
-						<button type="reset">Reset</button>
-						<button>Reverse</button>
+			<div class="container">
+				<section class="tutorial">
+					<p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F)</p>
+				</section>
+				<!-- Form Konversi -->
+				<section class="form-konversi">
+					<div class="con-input">
+						<label for="display">Celcius (&deg;C)</label>
+						<input type="text" id="display" />
+						<div class="btn-konversi">
+							<button onclick="konversi()">Konversi</button>
+							<button>Reset</button>
+							<button id="btn-reverse">Reverse</button>
+						</div>
 					</div>
-				</form>
-			</section>
-			<section class="form-hasil">
-				<form>
-					<label for="hasil">Fahrenheit(&deg;F)</label>
-					<input type="text" name="" id="hasil" readonly />
-				</form>
-			</section>
-			<section class="form-cara">
-				<label for="cara">Cara Kalkulasi</label>
-				<input type="text" id="cara" readonly />
-			</section>
+				</section>
+				<!-- Hasil Konversi -->
+				<section class="form-hasil">
+					<div class="con-hasil">
+						<label for="hasil">Fahrenheit(&deg;F)</label>
+						<input type="text" name="" id="hasil" readonly />
+					</div>
+				</section>
+				<!-- Cara Kalkulasi -->
+				<section class="form-cara">
+					<div class="con-cara">
+						<label for="cara">Cara Kalkulasi</label>
+						<input type="text" id="cara" readonly />
+					</div>
+				</section>
+			</div>
 		</main>
+		<script src="js/app.js"></script>
 	</body>
 </html>

@@ -12,7 +12,27 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+header {
+	border: 4px solid #eb5a3c;
+	margin-bottom: 10px;
+	height: 50px;
+	width: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff6b3;
+	color: #343131;
+	border-radius: 8px;
+	box-shadow: 5px 5px #343131, inset 2px 2px #ffffff;
+}
 main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+}
+.container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,26 +45,29 @@ main {
 	box-shadow: 10px 10px #343131, inset 3px 3px white;
 }
 /* Text Tutor */
-main .tutorial {
+.container .tutorial {
 	/* border: 1px solid red; */
 	padding: 12px 18px;
 	text-align: center;
 	font-size: 14px;
 }
 /* Form Konversi */
-main .form-konversi {
+.container .form-konversi {
 	display: flex;
 	/* border: 1px solid red; */
 	width: 100%;
 	align-items: center;
 	justify-content: center;
 }
-.form-konversi form {
+.form-konversi .con-input {
 	/* border:1px solid blue; */
 	width: 100%;
 	padding: 12px 24px;
 }
-.form-konversi form input {
+.form-konversi .con-input label {
+	font-size: 14px;
+}
+.form-konversi .con-input input {
 	width: 100%;
 	height: 50px;
 	font-size: 20px;
@@ -54,8 +77,9 @@ main .form-konversi {
 	border-radius: 4px;
 	transition: all 0.3s;
 	z-index: 2;
+	padding: 0 10px;
 }
-.form-konversi form input:focus {
+.form-konversi .con-input input:focus {
 	border-color: #eb5a3c;
 	outline: none;
 	box-shadow: 5px 5px #343131;
@@ -91,3 +115,64 @@ main .form-konversi {
 	background-color: #496f88;
 	color: white;
 }
+/* Hasil Konversi Style */
+.form-hasil {
+	/* border: 1px solid red; */
+	width: 100%;
+}
+
+.form-hasil .con-hasil {
+	display: flex;
+	flex-direction: column;
+	padding: 12px 24px;
+}
+.form-hasil .con-hasil label {
+	font-size: 14px;
+}
+.form-hasil .con-hasil input {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	box-shadow: 5px 5px #343131, inset 2px 2px grey;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	transition: all 0.3s;
+	z-index: 2;
+	padding: 0 10px;
+	cursor: default;
+}
+.form-hasil .con-hasil input:focus {
+	outline: none;
+}
+
+/* Form cara kalkulasi */
+.form-cara {
+	/* border: 1px solid red; */
+	width: 100%;
+}
+.form-cara label {
+	font-size: 14px;
+}
+.form-cara .con-cara {
+	display: flex;
+	flex-direction: column;
+	padding: 12px 24px;
+}
+.form-cara .con-cara input {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	position: relative;
+	box-shadow: 5px 5px #343131, inset 2px 2px grey;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	transition: all 0.3s;
+	z-index: 2;
+	padding: 0 10px;
+	cursor: default;
+}
+.form-cara .con-cara input:focus {
+	outline: none;
+}
+/* Penjelasan */
