@@ -17,6 +17,16 @@
 			<h2>Kalkulator Suhu</h2>
 		</header>
 		<main>
+			<div class="container-explain">
+				<div class="celcius" id="celcius">
+					<h3>Cara konversi suhu dari Celcius (&deg;C) ke Fahrenheit(&deg;F)</h3>
+					<p>Suhu <span style="font-size: large; font-weight: 500">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span style="font-size: large; font-weight: 500">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.</p>
+					<p>
+						S<sub>(&deg;F) = (S<sub>(&deg;C)</sub> &times; 9/5) + 32</sub>
+					</p>
+				</div>
+				<div class="fahrenheit"></div>
+			</div>
 			<div class="container">
 				<section class="tutorial">
 					<p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F)</p>
@@ -28,7 +38,7 @@
 						<input type="text" id="display" />
 						<div class="btn-konversi">
 							<button onclick="konversi()">Konversi</button>
-							<button>Reset</button>
+							<button onclick="reset()">Reset</button>
 							<button id="btn-reverse">Reverse</button>
 						</div>
 					</div>
@@ -37,7 +47,7 @@
 				<section class="form-hasil">
 					<div class="con-hasil">
 						<label for="hasil">Fahrenheit(&deg;F)</label>
-						<input type="text" name="" id="hasil" readonly />
+						<input type="text" id="hasil" readonly />
 					</div>
 				</section>
 				<!-- Cara Kalkulasi -->
