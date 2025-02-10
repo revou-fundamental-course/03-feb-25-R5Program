@@ -17,6 +17,7 @@
 			<h2>Kalkulator Suhu</h2>
 		</header>
 		<main>
+			<!-- Penjelasan Cara Konversi-->
 			<div class="container-explain">
 				<div class="celcius" id="celcius">
 					<h3>Cara konversi suhu dari Celcius (&deg;C) ke Fahrenheit(&deg;F)</h3>
@@ -27,36 +28,42 @@
 				</div>
 				<div class="fahrenheit"></div>
 			</div>
+			<!-- Container Utama Content-->
 			<div class="container">
 				<section class="tutorial">
-					<p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F)</p>
+					<p>
+						Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F).<br />
+						Dan tukar nilai menggunakan tombol Reverse.
+					</p>
 				</section>
 				<!-- Form Konversi -->
 				<section class="form-konversi">
+					<!-- Inputatan -->
 					<div class="con-input">
-						<label for="display">Celcius (&deg;C)</label>
+						<label for="display" id="input">Celcius (&deg;C)</label>
 						<input type="text" id="display" />
 						<div class="btn-konversi">
 							<button onclick="konversi()">Konversi</button>
 							<button onclick="reset()">Reset</button>
-							<button id="btn-reverse">Reverse</button>
+							<button onclick="reverse()">Reverse</button>
 						</div>
 					</div>
 				</section>
-				<!-- Hasil Konversi -->
+				<!-- Hasil Konversi atau outputnya-->
 				<section class="form-hasil">
 					<div class="con-hasil">
-						<label for="hasil">Fahrenheit(&deg;F)</label>
+						<label id="output">Fahrenheit (&deg;F)</label>
 						<input type="text" id="hasil" readonly />
 					</div>
 				</section>
 				<!-- Cara Kalkulasi -->
 				<section class="form-cara">
 					<div class="con-cara">
-						<label for="cara">Cara Kalkulasi</label>
+						<label>Cara Kalkulasi</label>
 						<input type="text" id="cara" readonly />
 					</div>
 				</section>
+				<p>Create by Ridho</p>
 			</div>
 		</main>
 		<script src="js/app.js"></script>
