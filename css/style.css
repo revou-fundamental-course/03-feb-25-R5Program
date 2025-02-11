@@ -31,7 +31,7 @@ main {
 	/* width: 100%; */
 	display: flex;
 	align-items: center;
-	border: 1px solid;
+	/* border: 1px solid; */
 	gap: 20px;
 }
 .container {
@@ -181,9 +181,12 @@ main {
 .container-explain {
 	height: 500px;
 	width: 400px;
-	border: 1px solid red;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
 }
-.celcius {
+.container-explain div {
 	height: 250px;
 	width: 100%;
 	background-color: #fff6b3;
@@ -193,14 +196,14 @@ main {
 	padding: 5px 10px;
 	/* display: none; */
 }
-.celcius h3 {
+.container-explain h3 {
 	font-size: 16px;
 }
-.celcius p {
+.container-explain p {
 	font-size: 14px;
 	line-height: 18px;
 }
-.celcius p:nth-child(3),
+.container-explain p:nth-child(3),
 sub {
 	margin-top: 15px;
 	font-size: 18px;
