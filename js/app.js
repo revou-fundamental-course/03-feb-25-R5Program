@@ -1,10 +1,11 @@
+// Pengambilan tag elemet
 const displayInput = document.getElementById("display");
 const displayHasil = document.getElementById("hasil");
 const displayCara = document.getElementById("cara");
 const labelInput = document.getElementById("input");
 const labelHasil = document.getElementById("output");
 
-let celciusToFahrenheit = true;
+let celciusToFahrenheit = true; //Mengubah kondisi awal
 
 function konversi() {
 	const inputValue = parseFloat(displayInput.value);
@@ -14,6 +15,7 @@ function konversi() {
 		return;
 	}
 
+	// Kondisi untuk Reverse
 	let hasil, cara;
 	if (celciusToFahrenheit) {
 		hasil = `${(inputValue * 9) / 5 + 32}\u00B0F`;
@@ -22,16 +24,19 @@ function konversi() {
 		hasil = `${(((inputValue - 32) * 5) / 9).toFixed(2)}\u00B0C`;
 		cara = `(${inputValue}\u00B0F - 32) * 5/9 = ${hasil}`;
 	}
+	// Menampilkan ke Inputan hasil dan cara
 	displayHasil.value = hasil;
 	displayCara.value = cara;
 }
 
+// Fungsi Reset
 function reset() {
 	displayInput.value = "";
 	displayHasil.value = "";
 	displayCara.value = "";
 }
 
+// Fungsi Reverse
 function reverse() {
 	celciusToFahrenheit = !celciusToFahrenheit;
 
